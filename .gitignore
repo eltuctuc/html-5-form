@@ -1,0 +1,13 @@
+/node_modules
+/www/vendor
+
+# Eclipse
+*.metadata
+*.project
+*.buildpath
+*.settings
+
+# PhpStorm
+*.idea
+
+#NetBeans
