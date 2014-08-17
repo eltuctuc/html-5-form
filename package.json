@@ -1,21 +1,26 @@
 {
 	"name": "HTML5Formular",
-	"version": "0.1.0",
-	"description": "",
+	"version": "0.1.1",
+	"description": "Ein schönes HTML5 Formular Beispiel zum Verschicken von Emails.",
 	"directories": {
 		"test": "test"
 	},
 	"dependencies": {
-		"grunt": "^0.4.5"
+		"bower": "*"
 	},
 	"devDependencies": {
-		"bower": "^1.3.8",
-		"grunt-contrib-concat": "^0.5.0",
-		"grunt-contrib-jshint": "^0.10.0",
-		"grunt-contrib-nodeunit": "^0.4.1",
-		"grunt-contrib-qunit": "^0.5.2",
-		"grunt-contrib-uglify": "^0.5.1",
-		"grunt-contrib-watch": "^0.6.1"
+		"grunt":                  "*",
+		"grunt-cssc":             "*",
+		"grunt-htmlhint":         "*",
+		"grunt-contrib-sass":     "*",
+		"grunt-contrib-watch":    "*",
+		"grunt-contrib-qunit":    "*",
+		"grunt-contrib-concat":   "*",
+		"grunt-contrib-jshint":   "*",
+		"grunt-contrib-uglify":   "*",
+		"grunt-contrib-cssmin":   "*",
+		"grunt-contrib-nodeunit": "*",
+		"matchdep":               "*"
 	},
 	"repository": {
 		"type": "git",
