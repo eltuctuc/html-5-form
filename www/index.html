@@ -40,28 +40,29 @@
 
 <div class="container">
 	<form id="contact-form" role="form" action="mail.php" enctype="multipart/form-data" accept-charset="utf-8">
-		<div class="form-group">
-			<label for="exampleInputEmail1">Email address</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		<div id="contact-results"></div>
+		<div id="contact-body">
+			<div class="form-group required">
+				<label for="inputName">Vor- und Familienname</label>
+				<input type="text" class="form-control" id="inputName" name="user_name" placeholder="Vorname Nachname" required="">
+			</div>
+			<div class="form-group required">
+				<label for="inputEmail">Email Adresse</label>
+				<input type="email" class="form-control" id="inputEmail" placeholder="beispiel@gmail.com" required="">
+			</div>
+			<div class="form-group">
+				<label for="inputSubject">Betreff</label>
+				<input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Betreff">
+			</div>
+			<div class="form-group">
+				<label for="inputMessage">Nachricht</label>
+				<textarea class="form-control" id="inputMessage" name="message" placeholder="Deine N<chricht"></textarea>
+			</div>
+			<button type="submit" class="btn btn-default">Abschicken</button>
+			<input type="hidden" name="toEmail" value="enrico@re-design.de">
+			<input type="hidden" name="toName" value="Enrico Reinsdorf">
+			<input type="hidden" name="subject" value="Test Email">
 		</div>
-		<div class="form-group">
-			<label for="exampleInputPassword1">Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-		</div>
-		<div class="form-group">
-			<label for="exampleInputFile">File input</label>
-			<input type="file" id="exampleInputFile">
-			<p class="help-block">Example block-level help text here.</p>
-		</div>
-		<div class="checkbox">
-			<label>
-				<input type="checkbox"> Check me out
-			</label>
-		</div>
-		<button type="submit" class="btn btn-default">Submit</button>
-		<input type="hidden" name="toEmail" value="enrico@re-design.de">
-		<input type="hidden" name="toName" value="Enrico Reinsdorf">
-		<input type="hidden" name="subject" value="Test Email">
 	</form>
 
 	<hr>

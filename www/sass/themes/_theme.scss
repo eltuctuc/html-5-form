@@ -1,3 +1,11 @@
 body {
 	margin: 5em 0 3em;
 }
+
+#contact-form {
+	.required {
+		> label {
+			color: red;
+		}
+	}
+}
