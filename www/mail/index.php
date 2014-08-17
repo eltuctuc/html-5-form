@@ -1,8 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Enrico Reinsdorf
- * Date: 16.08.2014
+ * Mail-Klasse
+ * Author: Enrico Reinsdorf
+ * Datum (erstellt): 16.08.2014
+ * Beispiel aus http://www.sanwebe.com/2011/12/making-simple-jquery-ajax-contact-form
  */
 
 use mail\Mail;
@@ -10,13 +11,11 @@ use mail\Mail;
 header('Content-type: application/json; charset=utf-8');
 
 $output = array();
-
 $output[] = array( //create JSON data
 	'get'=>$_GET,
 	'post' => $_POST,
 	'request' => $_REQUEST
 );
-
 
 if($_POST)
 {
