@@ -6,21 +6,21 @@
 		"test": "test"
 	},
 	"dependencies": {
-		"bower": "*"
+		"bower": "latest"
 	},
 	"devDependencies": {
-		"grunt":                  "*",
-		"grunt-cssc":             "*",
-		"grunt-htmlhint":         "*",
-		"grunt-contrib-sass":     "*",
-		"grunt-contrib-watch":    "*",
-		"grunt-contrib-qunit":    "*",
-		"grunt-contrib-concat":   "*",
-		"grunt-contrib-jshint":   "*",
-		"grunt-contrib-uglify":   "*",
-		"grunt-contrib-cssmin":   "*",
-		"grunt-contrib-nodeunit": "*",
-		"matchdep":               "*"
+		"grunt":                  "latest",
+		"grunt-cssc":             "latest",
+		"grunt-htmlhint":         "latest",
+		"grunt-contrib-sass":     "latest",
+		"grunt-contrib-watch":    "latest",
+		"grunt-contrib-qunit":    "latest",
+		"grunt-contrib-concat":   "latest",
+		"grunt-contrib-jshint":   "latest",
+		"grunt-contrib-uglify":   "latest",
+		"grunt-contrib-cssmin":   "latest",
+		"grunt-contrib-nodeunit": "latest",
+		"matchdep":               "latest"
 	},
 	"repository": {
 		"type": "git",
