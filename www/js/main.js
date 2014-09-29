@@ -12,21 +12,30 @@
 			event.preventDefault();
 			var proceed = true;
 
+			$('form-control.has-error').each(function () {
+				$(this).removeClass('has-error');
+			});
+
 			if(proceed) //everything looks good! proceed...
 			{
-				$.post('mail/index.php',
-					{
-						'user_email': 'postmaster@localhost',
-						'user_name': 'Postmaster',
-						'from_email': 'enrico.reinsdorf@re-design.de',
-						'from_name': 'Enrico Reinsdorf',
-						'subject': 'Test Subject',
-						'msg': ''
-					})// $.post(
+				$
+					.post('mail/recaptcha.php', {
+						'captcha': $('#inputCaptcha').val()
+					})
 
 					.done(function(data) {
 						console.log('success', data);
 						$("#contact-results").slideDown().html('');
+
+						if(data.success) {
+							$('#contact-form').submit();
+						} else {
+							$("#contact-result-captcha")
+								.hide()
+								.html('Der eingegebene Code ist falsch.')
+								.slideDown()
+								.parent().addClass('has-error');
+						}
 					})// $.post().done()
 
 					.fail(function(data) {
@@ -36,20 +45,15 @@
 							.hide()
 							.html('Ein Fehler ist aufgetreten.')
 							.slideDown();
-					})// $.post().done()
-
-					.always(function(data) {
-						console.log('finished');
-
-						$('#contact-results')
-							.hide()
-							.html('Email verschickt')
-							.slideDown();
-					}); // $.post.done()
+					})// $.post().fail()
+				;
 			}
 			$("#contact-results")
 				.hide()
 				.html('');
 		}); // contact-form.on()
+
+
+		$('#inputCaptcha').redCaptcha();
 	}); // document.ready()
 })(jQuery);
