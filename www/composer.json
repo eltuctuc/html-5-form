@@ -1,0 +1,16 @@
+{
+  "name": "re-design/html5-formular",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Enrico Reinsdorf",
+      "email": "enrico.reinsdorf@re-design.de"
+    }
+  ],
+  "require": {
+    "gregwar/captcha": "dev-master",
+    "phpmailer/phpmailer": "v5.2.9"
+  }
+}
