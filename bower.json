@@ -1,29 +1,28 @@
 {
-	"name": "Html5Formular",
-	"version": "0.1.1",
-	"authors": [
-		"Enrico Reinsdorf <enrico.reinsdorf@re-design.de>"
-	],
-	"main": "index.php",
-	"moduleType": [
-		"globals"
-	],
-	"license": "MIT",
-	"homepage": "www.re-design.de",
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"vendor",
-		"test",
-		"tests"
-	],
-	"dependencies": {
-		"jquery": "latest",
-		"bootstrap": "latest",
-		"modernizr": "latest"
-	},
-	"devDependencies": {
-	},
-	"private": true
+  "name": "Html5Formular",
+  "version": "0.1.1",
+  "authors": [
+    "Enrico Reinsdorf <enrico.reinsdorf@re-design.de>"
+  ],
+  "main": "index.php",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "www.re-design.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "modernizr": "latest"
+  },
+  "devDependencies": {},
+  "private": true
 }
