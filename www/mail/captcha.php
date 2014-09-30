@@ -15,7 +15,7 @@ session_start();
 
 header('Content-type: image/jpeg');
 
-$builder = CaptchaBuilder::create($_SESSION['phrase']);
+$builder = CaptchaBuilder::create();
 $builder->build();
 
 // Example: storing the phrase in the session to test for the user

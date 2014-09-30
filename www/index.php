@@ -40,33 +40,73 @@
 
 <div class="container">
 	<form id="contact-form" role="form" action="mail/mailer.php" method="post" enctype="multipart/form-data" accept-charset="utf-8">
-		<div id="contact-results"></div>
 		<div id="contact-body">
 			<div class="form-group required">
 				<label for="inputName">Vor- und Familienname</label>
-				<input type="text" class="form-control" id="inputName" name="user_name" placeholder="Vorname Nachname" required="">
+				<input type="text"
+					class="form-control"
+					id="inputName"
+					name="fromName"
+					placeholder="Vorname Nachname"
+					value="eltuctuc"
+					required="">
+				<span class="help-block"></span>
 			</div>
 			<div class="form-group required">
 				<label for="inputEmail">Email Adresse</label>
-				<input type="email" class="form-control" id="inputEmail" name="user_email" placeholder="beispiel@gmail.com" required="">
+				<input type="email"
+					class="form-control"
+					id="inputEmail"
+					name="fromEmail"
+					placeholder="beispiel@gmail.com"
+					value="enrico@re-design.de"
+					required="">
+				<span class="help-block"></span>
 			</div>
 			<div class="form-group">
 				<label for="inputSubject">Betreff</label>
-				<input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Betreff">
+				<input type="text"
+					class="form-control"
+					id="inputSubject"
+					name="subject"
+					placeholder="Betreff"
+				    value="test"
+					>
+				<span class="help-block"></span>
 			</div>
 			<div class="form-group">
 				<label for="inputMessage">Nachricht</label>
-				<textarea class="form-control" id="inputMessage" name="message" placeholder="Deine Nachricht"></textarea>
+				<textarea
+					class="form-control"
+					id="inputMessage"
+					name="message"
+					placeholder="Deine Nachricht"
+					></textarea>
+				<span class="help-block"></span>
 			</div>
 			<div class="form-group required">
 				<label for="inputCaptcha">Code-Eingabe</label>
 				<input type="text" class="form-control" id="inputCaptcha" name="captcha" placeholder="Gib die Daten des Bildes ein" required="" data-captcha-script="./mail/captcha.php">
 				<div id="contact-result-captcha" class="form-"></div>
 			</div>
-			<button type="submit" class="btn btn-default">Abschicken</button>
-			<input type="hidden" name="to_email" value="eltuctuc@gmail.com">
-			<input type="hidden" name="to_name" value="Enrico Reinsdorf">
-			<input type="hidden" name="subject" value="Test Email">
+			<button id="contact-submit" type="submit" class="btn btn-default">Abschicken</button>
+		</div>
+		<hr>
+		<div id="contact-success" class="panel panel-success">
+			<div class="panel-heading">
+				<p class="panel-title">Nachricht verschickt</p>
+			</div>
+			<div class="panel-body">
+				<p>Ihre Nachricht wurde erfolgreich verschickt</p>
+			</div>
+		</div>
+		<div id="contact-failed" class="panel panel-danger">
+			<div class="panel-heading">
+				<p class="panel-title">Übermittlungsfehler</p>
+			</div>
+			<div class="panel-body">
+				<p>Es ist ein Fehler aufgetreten. Versuchen Sie es später noch einmal oder oder schreiben sie eine Mail per <a href="mailto:info@webundprintdesign.de">info@webundprintdesign.de</a>.</p>
+			</div>
 		</div>
 	</form>
 
@@ -82,6 +122,7 @@
 <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script src="js/jquery-captcha.js"></script>
+<script src="js/jquery-phpmailerconfig.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
