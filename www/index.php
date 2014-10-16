@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="de"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="de"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="de"> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="de"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="de"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="de"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="de"> <!--<![endif]-->
 <head>
@@ -19,7 +22,7 @@
 </head>
 <body>
 <!--[if lt IE 7]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
@@ -44,33 +47,33 @@
 			<div class="form-group required">
 				<label for="inputName">Vor- und Familienname</label>
 				<input type="text"
-					class="form-control"
-					id="inputName"
-					name="fromName"
-					placeholder="Vorname Nachname"
-					value="eltuctuc"
-					required="">
+				       class="form-control"
+				       id="inputName"
+				       name="fromName"
+				       placeholder="Vorname Nachname"
+				       value="eltuctuc"
+				       required="">
 				<span class="help-block"></span>
 			</div>
 			<div class="form-group required">
 				<label for="inputEmail">Email Adresse</label>
 				<input type="email"
-					class="form-control"
-					id="inputEmail"
-					name="fromEmail"
-					placeholder="beispiel@gmail.com"
-					value="enrico@re-design.de"
-					required="">
+				       class="form-control"
+				       id="inputEmail"
+				       name="fromEmail"
+				       placeholder="beispiel@gmail.com"
+				       value="enrico@re-design.de"
+				       required="">
 				<span class="help-block"></span>
 			</div>
 			<div class="form-group">
 				<label for="inputSubject">Betreff</label>
 				<input type="text"
-					class="form-control"
-					id="inputSubject"
-					name="subject"
-					placeholder="Betreff"
-				    value="test"
+				       class="form-control"
+				       id="inputSubject"
+				       name="subject"
+				       placeholder="Betreff"
+				       value="test"
 					>
 				<span class="help-block"></span>
 			</div>
@@ -87,6 +90,7 @@
 			<div class="form-group required">
 				<label for="inputCaptcha">Code-Eingabe</label>
 				<input type="text" class="form-control" id="inputCaptcha" name="captcha" placeholder="Gib die Daten des Bildes ein" required="" data-captcha-script="./mail/captcha.php">
+
 				<div id="contact-result-captcha" class="form-"></div>
 			</div>
 			<button id="contact-submit" type="submit" class="btn btn-default">Abschicken</button>
